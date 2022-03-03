@@ -21,8 +21,8 @@
 </head>
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#registry">Registry</a>
+        <a class="active" href="/">Home</a>
+        <a class="active" href="/registry">Registry</a>
     </div>
     <h1>Registered Students</h1>
     <p>The following students have registered for student organizations</p>
@@ -34,11 +34,7 @@
         <tr>
             {% for key, value in registers.items() %}
                 <td>{{key}}</td>
-            {% endfor %}
-        </tr>
-        <tr>
-            {% for key, value in registers.items() %}
-                <td>{value}}</td>
+                <td>{{value}}</td>
             {% endfor %}
         </tr>
     </table>
