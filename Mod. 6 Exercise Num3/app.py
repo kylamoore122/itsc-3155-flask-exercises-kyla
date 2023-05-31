@@ -9,6 +9,11 @@ def index():
     py_name = request.args.get('queryname')
     return render_template('home.html')
 
+@app.get('/registry')
+def registery():
+    register()
+    return "0"
+
 @app.post('/registry')
 def register():
     py_registers = {}
